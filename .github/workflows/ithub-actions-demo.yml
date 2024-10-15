@@ -42,7 +42,6 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
   cypress-run:
-    needs: main
     runs-on: ubuntu-22.04
     steps:
       - name: ⬇️ Checkout repo
